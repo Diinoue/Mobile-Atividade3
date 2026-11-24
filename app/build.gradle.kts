@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.grimorio"
+    namespace = "com.example.grimoriodehogwarts"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.grimorio"
+        applicationId = "com.example.grimoriodehogwarts"
         minSdk = 29
         targetSdk = 36
         versionCode = 1
@@ -44,14 +44,6 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
-    // Retrofit + Gson
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    // Corrotinas
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
-    // Carregamento de imagens
-    implementation("io.coil-kt:coil:2.6.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
